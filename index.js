@@ -183,10 +183,9 @@ function keyboard(type, o) {
  */
 
 function custom(name, o) {
-  return new Event(name, {
-    bubbles: o.bubbles !== false,
-    cancelable: o.cancelable !== false
-  })
+  var evt = document.createEvent('CustomEvent');
+  evt.initCustomEvent(name, o.bubbles !== false, o.cancelable !== false, null);
+  return evt;
 }
 
 /*!
