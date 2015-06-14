@@ -1,9 +1,9 @@
 {
   "name": "dom-event",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "low level helper for creating dom event objects",
   "dependencies": {
-    "keycode": "http://github.com/jkroso/keycode/tarball/0.1.0"
+    "keycode": "^2.1.0"
   },
   "repository": {
     "type": "git",
